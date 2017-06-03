@@ -1,8 +1,52 @@
-.dk-selected:before{
+.dk-selected:before {
       border: none;
       margin: 0;
       top: -9%;
       width: 26px;
       height: 27px;
       background: url('./select-button-arrows.svg');
-  }
+      background-repeat: no-repeat;
+}
+
+.dk-selected {
+  display: flex;
+  align-items: center;
+  border: 3px solid #353895;
+  border-radius: 0;
+  outline: none;
+  /*border: 3px solid var(--carluccioBlue);*/
+  color: #353895;
+  /*color: var(--carluccioBlue);*/
+  font-family: fantasy;
+  height: 40px;
+  padding-left: 10px;
+  width: calc(305px + 89 * ((100vw - 360px) / 1080));
+}
+
+.dk-selected:hover, .dk-selected:focus {
+  outline: none;
+  border-color: grey;
+}
+
+.dk-select-options {
+  display: flex;
+  align-items: center;
+  width: calc(305px + 89 * ((100vw - 360px) / 1080));
+}
+
+.dk-select-options li:first-child {
+  background-color: grey;
+}
+
+
+.dk-option {
+  font-family: fantasy;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.dk-option-selected, .dk-select-options .dk-option-highlight {
+    color: white;
+    background-color: #353895;
+}
