@@ -1,0 +1,8 @@
+.dk-selected:before{
+      border: none;
+      margin: 0;
+      top: -9%;
+      width: 26px;
+      height: 27px;
+      background: url('./select-button-arrows.svg');
+  }
