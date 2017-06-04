@@ -1,16 +1,20 @@
 .dk-selected:before {
       border: none;
       margin: 0;
-      top: -9%;
+      top: 10%;
       width: 26px;
       height: 27px;
       background: url('./select-button-arrows.svg');
       background-repeat: no-repeat;
 }
 
+.dk-selected:after {
+  border-left: none;
+}
+
 .dk-selected {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   border: 3px solid #353895;
   border-radius: 0;
   outline: none;
@@ -35,7 +39,13 @@
 }
 
 .dk-select-options li:first-child {
-  background-color: grey;
+  background-color: lightgrey;
+  color: black;
+}
+
+.dk-select-options li:first-child.dk-option-highlight {
+  color: white;
+  background-color: #353895;
 }
 
 
@@ -49,4 +59,18 @@
 .dk-option-selected, .dk-select-options .dk-option-highlight {
     color: white;
     background-color: #353895;
+}
+
+.dk-select-open-down div:first-child {
+  background-color: lightgrey;
+  color: #353895;
+}
+
+.dk-select-open-down .dk-select-options {
+  border-radius: 0;
+}
+
+.dk-select-open-down .dk-select-options {
+  border: 1px solid #353895;
+  padding: 0;
 }
