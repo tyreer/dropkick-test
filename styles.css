@@ -74,3 +74,23 @@
   border: 1px solid #353895;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #e4e4e4;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  position: absolute;
+  z-index: 100;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background: #006;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    min-height: 30px;
+}

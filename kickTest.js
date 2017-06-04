@@ -1,4 +1,4 @@
 'use strict'
 
-const test = document.getElementById('test');
-var select = new Dropkick(test);
+let myDropKickSelectVariable = document.getElementById('myDropKickSelect');
+var select = new Dropkick(myDropKickSelectVariable);
